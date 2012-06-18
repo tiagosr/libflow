@@ -6,8 +6,36 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		B18528241569C15E009D3DA8 /* flowvm.h in Headers */ = {isa = PBXBuildFile; fileRef = B1A393D41569505B0037B582 /* flowvm.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B18528261569C22E009D3DA8 /* tgc.c in Sources */ = {isa = PBXBuildFile; fileRef = B18528251569C22E009D3DA8 /* tgc.c */; };
+		B18528271569C22E009D3DA8 /* tgc.c in Sources */ = {isa = PBXBuildFile; fileRef = B18528251569C22E009D3DA8 /* tgc.c */; };
+		B1A393D51569505B0037B582 /* flowvm.h in Headers */ = {isa = PBXBuildFile; fileRef = B1A393D41569505B0037B582 /* flowvm.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B1A393D7156950760037B582 /* flowvm.c in Sources */ = {isa = PBXBuildFile; fileRef = B1A393D6156950760037B582 /* flowvm.c */; };
+		B1A393DF156980A90037B582 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1A393DE156980A90037B582 /* Foundation.framework */; };
+		B1A393E5156980A90037B582 /* libflow_ios.m in Sources */ = {isa = PBXBuildFile; fileRef = B1A393E4156980A90037B582 /* libflow_ios.m */; };
+		B1A393E9156988AC0037B582 /* flowvm.c in Sources */ = {isa = PBXBuildFile; fileRef = B1A393D6156950760037B582 /* flowvm.c */; };
+		B1A97AD8158D227C00A49F26 /* tgc.h in Headers */ = {isa = PBXBuildFile; fileRef = B1A97AD7158D227C00A49F26 /* tgc.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B1A97AD9158D98A000A49F26 /* tgc.h in Headers */ = {isa = PBXBuildFile; fileRef = B1A97AD7158D227C00A49F26 /* tgc.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B1A97ADB158E816400A49F26 /* rmm.c in Sources */ = {isa = PBXBuildFile; fileRef = B1A97ADA158E816300A49F26 /* rmm.c */; };
+		B1A97ADC158E816400A49F26 /* rmm.c in Sources */ = {isa = PBXBuildFile; fileRef = B1A97ADA158E816300A49F26 /* rmm.c */; };
+		B1A97ADE158E818000A49F26 /* rmm.h in Headers */ = {isa = PBXBuildFile; fileRef = B1A97ADD158E817F00A49F26 /* rmm.h */; };
+		B1A97ADF158E818000A49F26 /* rmm.h in Headers */ = {isa = PBXBuildFile; fileRef = B1A97ADD158E817F00A49F26 /* rmm.h */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
+		B18528251569C22E009D3DA8 /* tgc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tgc.c; sourceTree = "<group>"; };
 		B1A393CC15694FFA0037B582 /* liblibflow.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = liblibflow.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1A393D41569505B0037B582 /* flowvm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = flowvm.h; sourceTree = "<group>"; };
+		B1A393D6156950760037B582 /* flowvm.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = flowvm.c; sourceTree = "<group>"; };
+		B1A393DC156980A90037B582 /* liblibflow-ios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "liblibflow-ios.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1A393DE156980A90037B582 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B1A393E2156980A90037B582 /* libflow-ios-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "libflow-ios-Prefix.pch"; sourceTree = "<group>"; };
+		B1A393E3156980A90037B582 /* libflow_ios.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = libflow_ios.h; sourceTree = "<group>"; };
+		B1A393E4156980A90037B582 /* libflow_ios.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = libflow_ios.m; sourceTree = "<group>"; };
+		B1A97AD7158D227C00A49F26 /* tgc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tgc.h; sourceTree = "<group>"; };
+		B1A97ADA158E816300A49F26 /* rmm.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = rmm.c; sourceTree = "<group>"; };
+		B1A97ADD158E817F00A49F26 /* rmm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rmm.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -18,12 +46,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B1A393D9156980A90037B582 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1A393DF156980A90037B582 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		B1A393C115694FF90037B582 = {
 			isa = PBXGroup;
 			children = (
+				B1A393D3156950120037B582 /* src */,
+				B1A393E0156980A90037B582 /* libflow-ios */,
+				B1A393DD156980A90037B582 /* Frameworks */,
 				B1A393CD15694FFA0037B582 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -32,8 +71,48 @@
 			isa = PBXGroup;
 			children = (
 				B1A393CC15694FFA0037B582 /* liblibflow.a */,
+				B1A393DC156980A90037B582 /* liblibflow-ios.a */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		B1A393D3156950120037B582 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				B1A97AD7158D227C00A49F26 /* tgc.h */,
+				B18528251569C22E009D3DA8 /* tgc.c */,
+				B1A393D41569505B0037B582 /* flowvm.h */,
+				B1A393D6156950760037B582 /* flowvm.c */,
+				B1A97ADA158E816300A49F26 /* rmm.c */,
+				B1A97ADD158E817F00A49F26 /* rmm.h */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		B1A393DD156980A90037B582 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B1A393DE156980A90037B582 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B1A393E0156980A90037B582 /* libflow-ios */ = {
+			isa = PBXGroup;
+			children = (
+				B1A393E3156980A90037B582 /* libflow_ios.h */,
+				B1A393E4156980A90037B582 /* libflow_ios.m */,
+				B1A393E1156980A90037B582 /* Supporting Files */,
+			);
+			path = "libflow-ios";
+			sourceTree = "<group>";
+		};
+		B1A393E1156980A90037B582 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B1A393E2156980A90037B582 /* libflow-ios-Prefix.pch */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -43,6 +122,19 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1A393D51569505B0037B582 /* flowvm.h in Headers */,
+				B1A97AD8158D227C00A49F26 /* tgc.h in Headers */,
+				B1A97ADE158E818000A49F26 /* rmm.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1A393DA156980A90037B582 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B18528241569C15E009D3DA8 /* flowvm.h in Headers */,
+				B1A97AD9158D98A000A49F26 /* tgc.h in Headers */,
+				B1A97ADF158E818000A49F26 /* rmm.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +156,23 @@
 			name = libflow;
 			productName = libflow;
 			productReference = B1A393CC15694FFA0037B582 /* liblibflow.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		B1A393DB156980A90037B582 /* libflow-ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1A393E6156980A90037B582 /* Build configuration list for PBXNativeTarget "libflow-ios" */;
+			buildPhases = (
+				B1A393D8156980A90037B582 /* Sources */,
+				B1A393D9156980A90037B582 /* Frameworks */,
+				B1A393DA156980A90037B582 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "libflow-ios";
+			productName = "libflow-ios";
+			productReference = B1A393DC156980A90037B582 /* liblibflow-ios.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -88,6 +197,7 @@
 			projectRoot = "";
 			targets = (
 				B1A393CB15694FFA0037B582 /* libflow */,
+				B1A393DB156980A90037B582 /* libflow-ios */,
 			);
 		};
 /* End PBXProject section */
@@ -97,6 +207,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1A393D7156950760037B582 /* flowvm.c in Sources */,
+				B18528261569C22E009D3DA8 /* tgc.c in Sources */,
+				B1A97ADB158E816400A49F26 /* rmm.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1A393D8156980A90037B582 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1A393E5156980A90037B582 /* libflow_ios.m in Sources */,
+				B1A393E9156988AC0037B582 /* flowvm.c in Sources */,
+				B18528271569C22E009D3DA8 /* tgc.c in Sources */,
+				B1A97ADC158E816400A49F26 /* rmm.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,6 +288,37 @@
 			};
 			name = Release;
 		};
+		B1A393E7156980A90037B582 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				DSTROOT = /tmp/libflow_ios.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "libflow-ios/libflow-ios-Prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		B1A393E8156980A90037B582 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				DSTROOT = /tmp/libflow_ios.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "libflow-ios/libflow-ios-Prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -183,6 +338,16 @@
 				B1A393D215694FFA0037B582 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B1A393E6156980A90037B582 /* Build configuration list for PBXNativeTarget "libflow-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1A393E7156980A90037B582 /* Debug */,
+				B1A393E8156980A90037B582 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
