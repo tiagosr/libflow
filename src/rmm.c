@@ -10,12 +10,12 @@
 
 int region_create(size_t preferred_size)
 {
-    
+    return 0;
 }
 
 void *rmalloc(int region, size_t size, void(*finalizer)(void*obj))
 {
-    
+    return NULL;
 }
 
 

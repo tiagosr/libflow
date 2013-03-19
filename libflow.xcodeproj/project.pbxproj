@@ -21,7 +21,46 @@
 		B1A97ADC158E816400A49F26 /* rmm.c in Sources */ = {isa = PBXBuildFile; fileRef = B1A97ADA158E816300A49F26 /* rmm.c */; };
 		B1A97ADE158E818000A49F26 /* rmm.h in Headers */ = {isa = PBXBuildFile; fileRef = B1A97ADD158E817F00A49F26 /* rmm.h */; };
 		B1A97ADF158E818000A49F26 /* rmm.h in Headers */ = {isa = PBXBuildFile; fileRef = B1A97ADD158E817F00A49F26 /* rmm.h */; };
+		B1EBAA7A16BF4899002E5016 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1EBAA7916BF4899002E5016 /* SenTestingKit.framework */; };
+		B1EBAA7C16BF4899002E5016 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1EBAA7B16BF4899002E5016 /* Cocoa.framework */; };
+		B1EBAA8616BF4899002E5016 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B1EBAA8416BF4899002E5016 /* InfoPlist.strings */; };
+		B1EBAA8916BF4899002E5016 /* LibFlowGCTest.m in Sources */ = {isa = PBXBuildFile; fileRef = B1EBAA8816BF4899002E5016 /* LibFlowGCTest.m */; };
+		B1EBAA9016BF4C3B002E5016 /* liblibflow.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B1A393CC15694FFA0037B582 /* liblibflow.a */; };
+		B1EBAA9616C344D0002E5016 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1A393DE156980A90037B582 /* Foundation.framework */; };
+		B1EBAA9916C344D0002E5016 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B1EBAA9816C344D0002E5016 /* main.m */; };
+		B1EBAA9D16C344D0002E5016 /* TGCTest.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = B1EBAA9C16C344D0002E5016 /* TGCTest.1 */; };
+		B1EBAAA316C3583B002E5016 /* liblibflow.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B1A393CC15694FFA0037B582 /* liblibflow.a */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B1EBAA8E16BF4C31002E5016 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B1A393C315694FF90037B582 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B1A393CB15694FFA0037B582;
+			remoteInfo = libflow;
+		};
+		B1EBAAA116C3582E002E5016 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B1A393C315694FF90037B582 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B1A393CB15694FFA0037B582;
+			remoteInfo = libflow;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B1EBAA9316C344D0002E5016 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				B1EBAA9D16C344D0002E5016 /* TGCTest.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		B18528251569C22E009D3DA8 /* tgc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tgc.c; sourceTree = "<group>"; };
@@ -36,6 +75,21 @@
 		B1A97AD7158D227C00A49F26 /* tgc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tgc.h; sourceTree = "<group>"; };
 		B1A97ADA158E816300A49F26 /* rmm.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = rmm.c; sourceTree = "<group>"; };
 		B1A97ADD158E817F00A49F26 /* rmm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rmm.h; sourceTree = "<group>"; };
+		B1EBAA7816BF4899002E5016 /* LibFlowGCTest.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LibFlowGCTest.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1EBAA7916BF4899002E5016 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		B1EBAA7B16BF4899002E5016 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		B1EBAA7E16BF4899002E5016 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		B1EBAA7F16BF4899002E5016 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		B1EBAA8016BF4899002E5016 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B1EBAA8316BF4899002E5016 /* LibFlowGCTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LibFlowGCTest-Info.plist"; sourceTree = "<group>"; };
+		B1EBAA8516BF4899002E5016 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B1EBAA8716BF4899002E5016 /* LibFlowGCTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LibFlowGCTest.h; sourceTree = "<group>"; };
+		B1EBAA8816BF4899002E5016 /* LibFlowGCTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LibFlowGCTest.m; sourceTree = "<group>"; };
+		B1EBAA8A16BF4899002E5016 /* LibFlowGCTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LibFlowGCTest-Prefix.pch"; sourceTree = "<group>"; };
+		B1EBAA9516C344D0002E5016 /* TGCTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TGCTest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1EBAA9816C344D0002E5016 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B1EBAA9B16C344D0002E5016 /* TGCTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TGCTest-Prefix.pch"; sourceTree = "<group>"; };
+		B1EBAA9C16C344D0002E5016 /* TGCTest.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = TGCTest.1; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +108,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B1EBAA7416BF4899002E5016 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1EBAA9016BF4C3B002E5016 /* liblibflow.a in Frameworks */,
+				B1EBAA7A16BF4899002E5016 /* SenTestingKit.framework in Frameworks */,
+				B1EBAA7C16BF4899002E5016 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1EBAA9216C344D0002E5016 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1EBAAA316C3583B002E5016 /* liblibflow.a in Frameworks */,
+				B1EBAA9616C344D0002E5016 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -62,6 +135,8 @@
 			children = (
 				B1A393D3156950120037B582 /* src */,
 				B1A393E0156980A90037B582 /* libflow-ios */,
+				B1EBAA8116BF4899002E5016 /* LibFlowGCTest */,
+				B1EBAA9716C344D0002E5016 /* TGCTest */,
 				B1A393DD156980A90037B582 /* Frameworks */,
 				B1A393CD15694FFA0037B582 /* Products */,
 			);
@@ -72,6 +147,8 @@
 			children = (
 				B1A393CC15694FFA0037B582 /* liblibflow.a */,
 				B1A393DC156980A90037B582 /* liblibflow-ios.a */,
+				B1EBAA7816BF4899002E5016 /* LibFlowGCTest.octest */,
+				B1EBAA9516C344D0002E5016 /* TGCTest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -93,6 +170,9 @@
 			isa = PBXGroup;
 			children = (
 				B1A393DE156980A90037B582 /* Foundation.framework */,
+				B1EBAA7916BF4899002E5016 /* SenTestingKit.framework */,
+				B1EBAA7B16BF4899002E5016 /* Cocoa.framework */,
+				B1EBAA7D16BF4899002E5016 /* Other Frameworks */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -111,6 +191,54 @@
 			isa = PBXGroup;
 			children = (
 				B1A393E2156980A90037B582 /* libflow-ios-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B1EBAA7D16BF4899002E5016 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B1EBAA7E16BF4899002E5016 /* AppKit.framework */,
+				B1EBAA7F16BF4899002E5016 /* CoreData.framework */,
+				B1EBAA8016BF4899002E5016 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		B1EBAA8116BF4899002E5016 /* LibFlowGCTest */ = {
+			isa = PBXGroup;
+			children = (
+				B1EBAA8716BF4899002E5016 /* LibFlowGCTest.h */,
+				B1EBAA8816BF4899002E5016 /* LibFlowGCTest.m */,
+				B1EBAA8216BF4899002E5016 /* Supporting Files */,
+			);
+			path = LibFlowGCTest;
+			sourceTree = "<group>";
+		};
+		B1EBAA8216BF4899002E5016 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B1EBAA8316BF4899002E5016 /* LibFlowGCTest-Info.plist */,
+				B1EBAA8416BF4899002E5016 /* InfoPlist.strings */,
+				B1EBAA8A16BF4899002E5016 /* LibFlowGCTest-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B1EBAA9716C344D0002E5016 /* TGCTest */ = {
+			isa = PBXGroup;
+			children = (
+				B1EBAA9816C344D0002E5016 /* main.m */,
+				B1EBAA9C16C344D0002E5016 /* TGCTest.1 */,
+				B1EBAA9A16C344D0002E5016 /* Supporting Files */,
+			);
+			path = TGCTest;
+			sourceTree = "<group>";
+		};
+		B1EBAA9A16C344D0002E5016 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B1EBAA9B16C344D0002E5016 /* TGCTest-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -175,13 +303,50 @@
 			productReference = B1A393DC156980A90037B582 /* liblibflow-ios.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		B1EBAA7716BF4899002E5016 /* LibFlowGCTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1EBAA8D16BF4899002E5016 /* Build configuration list for PBXNativeTarget "LibFlowGCTest" */;
+			buildPhases = (
+				B1EBAA7316BF4899002E5016 /* Sources */,
+				B1EBAA7416BF4899002E5016 /* Frameworks */,
+				B1EBAA7516BF4899002E5016 /* Resources */,
+				B1EBAA7616BF4899002E5016 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B1EBAA8F16BF4C31002E5016 /* PBXTargetDependency */,
+			);
+			name = LibFlowGCTest;
+			productName = LibFlowGCTest;
+			productReference = B1EBAA7816BF4899002E5016 /* LibFlowGCTest.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+		B1EBAA9416C344D0002E5016 /* TGCTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1EBAA9E16C344D0002E5016 /* Build configuration list for PBXNativeTarget "TGCTest" */;
+			buildPhases = (
+				B1EBAA9116C344D0002E5016 /* Sources */,
+				B1EBAA9216C344D0002E5016 /* Frameworks */,
+				B1EBAA9316C344D0002E5016 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B1EBAAA216C3582E002E5016 /* PBXTargetDependency */,
+			);
+			name = TGCTest;
+			productName = TGCTest;
+			productReference = B1EBAA9516C344D0002E5016 /* TGCTest */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		B1A393C315694FF90037B582 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0420;
+				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Pixel of View";
 			};
 			buildConfigurationList = B1A393C615694FF90037B582 /* Build configuration list for PBXProject "libflow" */;
@@ -198,9 +363,38 @@
 			targets = (
 				B1A393CB15694FFA0037B582 /* libflow */,
 				B1A393DB156980A90037B582 /* libflow-ios */,
+				B1EBAA7716BF4899002E5016 /* LibFlowGCTest */,
+				B1EBAA9416C344D0002E5016 /* TGCTest */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B1EBAA7516BF4899002E5016 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1EBAA8616BF4899002E5016 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B1EBAA7616BF4899002E5016 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B1A393C815694FFA0037B582 /* Sources */ = {
@@ -224,7 +418,47 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B1EBAA7316BF4899002E5016 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1EBAA8916BF4899002E5016 /* LibFlowGCTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1EBAA9116C344D0002E5016 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1EBAA9916C344D0002E5016 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B1EBAA8F16BF4C31002E5016 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B1A393CB15694FFA0037B582 /* libflow */;
+			targetProxy = B1EBAA8E16BF4C31002E5016 /* PBXContainerItemProxy */;
+		};
+		B1EBAAA216C3582E002E5016 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B1A393CB15694FFA0037B582 /* libflow */;
+			targetProxy = B1EBAAA116C3582E002E5016 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B1EBAA8416BF4899002E5016 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B1EBAA8516BF4899002E5016 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		B1A393CE15694FFA0037B582 /* Debug */ = {
@@ -232,6 +466,10 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -246,6 +484,7 @@
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				ONLY_ACTIVE_ARCH = YES;
@@ -258,6 +497,10 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -266,6 +509,7 @@
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				SDKROOT = macosx;
@@ -275,6 +519,7 @@
 		B1A393D115694FFA0037B582 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				EXECUTABLE_PREFIX = lib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -283,6 +528,7 @@
 		B1A393D215694FFA0037B582 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				EXECUTABLE_PREFIX = lib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -319,6 +565,86 @@
 			};
 			name = Release;
 		};
+		B1EBAA8B16BF4899002E5016 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LibFlowGCTest/LibFlowGCTest-Prefix.pch";
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				INFOPLIST_FILE = "LibFlowGCTest/LibFlowGCTest-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		B1EBAA8C16BF4899002E5016 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LibFlowGCTest/LibFlowGCTest-Prefix.pch";
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				INFOPLIST_FILE = "LibFlowGCTest/LibFlowGCTest-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+		B1EBAA9F16C344D0002E5016 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TGCTest/TGCTest-Prefix.pch";
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B1EBAAA016C344D0002E5016 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TGCTest/TGCTest-Prefix.pch";
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -345,6 +671,24 @@
 			buildConfigurations = (
 				B1A393E7156980A90037B582 /* Debug */,
 				B1A393E8156980A90037B582 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B1EBAA8D16BF4899002E5016 /* Build configuration list for PBXNativeTarget "LibFlowGCTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1EBAA8B16BF4899002E5016 /* Debug */,
+				B1EBAA8C16BF4899002E5016 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B1EBAA9E16C344D0002E5016 /* Build configuration list for PBXNativeTarget "TGCTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1EBAA9F16C344D0002E5016 /* Debug */,
+				B1EBAAA016C344D0002E5016 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

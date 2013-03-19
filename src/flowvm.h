@@ -116,22 +116,23 @@ struct flow_clistref {
     size_t inv_index;
 };
 
-
-typedef flow_clist *(*flow_ffi_fn)(flow_vm_ctx *ctx, flow_clist *arg);
-
 struct flow_pair {
     union {
         void *first;
         int first_i;
         float first_f;
+        struct flow_pair *first_p;
     };
     union {
         void *rest;
         int rest_i;
         float rest_f;
+        struct flow_pair *rest_p;
     };
     char t_first, t_rest;
 };
+
+typedef flow_pair *(*flow_ffi_fn)(flow_vm_ctx *ctx, flow_pair *arg);
 
 /*
  * other implementation avenues:
@@ -159,15 +160,16 @@ struct flow_item_plus_type {
 };
 
 struct flow_vm_ctx {
-    flow_clist *arg;
-    flow_clistref *code;
-    flow_clist *ret;
+    flow_pair *arg;
+    flow_pair *code;
+    flow_pair *ret;
 };
 
 flow_vm_ctx *flow_setup(void);
-flow_clist *flow_run(flow_vm_ctx *ctx, flow_clistref *code_start);
+flow_pair *flow_run(flow_vm_ctx *ctx, flow_pair *code_start);
 
 
+/*
 flow_clist *flow_make_new_list(flow_clist *link_to);
 flow_clist *flow_list_pop(flow_clist *list);
 flow_clist *flow_list_push(flow_clist *list, flow_item val, char type);
@@ -186,10 +188,15 @@ flow_clist *flow_list_push_listref(flow_clist *list, flow_clist *other, size_t o
 flow_item flow_list_get(flow_clist *list, size_t offset);
 char flow_list_get_type(flow_clist *list, size_t offset);
 void flow_list_set(flow_clist *list, size_t offset, flow_item item, char type);
+flow_clistref *flow_make_listref(flow_clist *link, size_t offset_into);
+*/
 
 flow_pair * flow_cons(flow_vm_ctx *ctx, void *first, void *rest, char t_first, char t_rest);
 flow_pair *flow_cons_fl(flow_vm_ctx *ctx, float first, flow_pair *rest);
 flow_pair *flow_cons_il(flow_vm_ctx *ctx, int first, flow_pair *rest);
+flow_pair *flow_cons_cl(flow_vm_ctx *ctx, int op, flow_pair *rest);
+flow_pair *flow_cons_ll(flow_vm_ctx *ctx, flow_pair *first, flow_pair *rest);
 extern flow_pair *nil_pair;
+
 
 #endif

@@ -11,5 +11,7 @@
 
 #include <stdlib.h>
 
+int region_create(size_t preferred_size);
 
+void *rmalloc(int region, size_t size, void(*finalizer)(void*obj));
 #endif
